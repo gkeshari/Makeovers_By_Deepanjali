@@ -48,8 +48,16 @@ st.markdown("""
         border: 2px solid #FF69B4;
     }
     /* Ensure text visibility on all devices */
-    p, li, .stMarkdown {
+    p, li, .stMarkdown, .stText {
         color: #333 !important;
+    }
+    /* Style for feedback text */
+    .recent-feedback {
+        background-color: #ffe6f7;
+        border: 1px solid #FF69B4;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
     }
     /* Improve readability on mobile */
     @media (max-width: 768px) {
