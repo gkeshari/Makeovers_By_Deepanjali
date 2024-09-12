@@ -56,8 +56,8 @@ st.header("About Me")
 
 # Moved about section to below the images
 st.write("""
-**Welcome! I'm Deepanjali, your personal beauty alchemist.**  
-With years of experience in the world of makeup artistry, I specialize in transforming my clients into their most radiant selves for every occasion—be it a dreamy bridal look, an elegant photoshoot, or a dazzling party appearance. I believe makeup is more than just applying products; it's an art form that enhances your natural beauty while letting your personality shine through. My goal is to not only make you look stunning but also to empower you with confidence and grace, making every moment of your special day unforgettable. Let's create magic together and bring your beauty vision to life!
+**Welcome. I'm Deepanjali, your personal beauty alchemist !**  
+Let's create your most radiant self together. As a seasoned makeup artist, I specialize in transforming looks for every occasion. My passion lies in enhancing your natural beauty and boosting your confidence. Book your appointment today and let's make your special day unforgettable!
 """)
 
 # Initialize session state to avoid infinite loop
@@ -147,7 +147,7 @@ for question, answer in faq.items():
         st.write(answer)
 
 
-st.header("Check out my Social Media Handles and Please follow -")
+st.header("Check out my Social Media Handles & Please follow :")
 col1, col2 = st.columns(2)
 with col1:
     youtube_link = "https://www.youtube.com/@makeovers_by_deepanjali"
