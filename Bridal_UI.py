@@ -1,4 +1,3 @@
-
 import streamlit as st
 from PIL import Image
 import time
@@ -6,9 +5,13 @@ import time
 # Set page config
 st.set_page_config(page_title="Makeovers_By_Deepanjali", page_icon="💄", layout="wide")
 
-# Custom CSS for enhanced aesthetics
+# Custom CSS for enhanced aesthetics and cross-device compatibility
 st.markdown("""
     <style>
+    body {
+        color: #333;
+        background-color: #FFF0F5;
+    }
     .main {
         background-color: #FFF0F5;
         font-family: 'Helvetica', sans-serif;
@@ -44,8 +47,28 @@ st.markdown("""
         border-radius: 10px;
         border: 2px solid #FF69B4;
     }
+    /* Ensure text visibility on all devices */
+    p, li, .stMarkdown {
+        color: #333 !important;
+    }
+    /* Improve readability on mobile */
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
     </style>
     """, unsafe_allow_html=True)
+
 
 # Header
 st.title("💄 Makeovers_By_Deepanjali")
@@ -209,6 +232,3 @@ if st.session_state.feedback:
 # Footer
 st.markdown("---")
 st.write("© 2024 Glamour by Deepanjali. All rights reserved.")
-
-
-
